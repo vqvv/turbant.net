@@ -1,0 +1,218 @@
+<html><head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="turbant">
+    <meta property="og:description" content="turbant#1337">
+    <meta property="og:image" content="http://cdn.heroin.cf/turbant.png">
+    <meta property="og:url" content="http://turbant.net">
+    <meta property="theme-color" content="f8f8f8">
+  	<link rel="shortcut icon" href="https://heroin.gg/turbant.png?" type="image/x-icon">
+  <title>turbant</title>
+    <link rel="stylesheet" href="https://heroin.gg/turbant.css">
+     <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            cursor: url("https://heroin.gg/cursor.cur"), auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture {
+            margin-bottom: 20px;
+        }
+
+        .profile-picture img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .links a {
+            display: block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .links a:hover {
+            background-color: #555;
+        }
+        header {
+  display: flex;
+  align-items: center;
+}
+
+header > h1 {
+  font-size: 0.8em;
+  margin-bottom: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.badges {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.badge {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+.badge img {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+}
+
+.badge .badge-text {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #000a;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 50%;
+  font-size: 0.7em; /* Edit the pixel size of the hover text here */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.badge:hover .badge-text {
+  opacity: 1;
+  visibility: visible;
+}
+        header > h2 {
+  font-size: 0.8em;
+  margin-bottom: 0;
+
+    </style>
+</head>
+<body>
+    <audio id="audioPlayer" src="gay.mp3"></audio>
+
+<script>
+  // Define an array of audio file URLs
+  var audioFiles = [
+    'turbant.mp3',
+    'is.mp3',
+    'gay.mp3',
+    // Add more audio file URLs as needed
+  ];
+
+  // Shuffle the audio file array
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+  
+    while (0 !== currentIndex) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+  
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+  
+    return array;
+  }
+  
+  // Shuffle the audio files
+  var shuffledAudioFiles = shuffle(audioFiles);
+  
+  // Play the shuffled audio files in a loop
+  var currentIndex = 0;
+  
+  function playNextAudio() {
+    var audioPlayer = document.getElementById('audioPlayer');
+  
+    if (currentIndex >= shuffledAudioFiles.length) {
+      // Reached the end of the shuffled audio files, shuffle again
+      shuffledAudioFiles = shuffle(audioFiles);
+      currentIndex = 0;
+    }
+  
+    audioPlayer.src = shuffledAudioFiles[currentIndex];
+    audioPlayer.play();
+  
+    currentIndex++;
+  }
+  
+  // Play the next audio when the website loads
+  window.addEventListener('load', playNextAudio);
+  
+  // Play the next audio when the current audio ends
+  audioPlayer.addEventListener('ended', playNextAudio);
+</script>
+    <main class="animated" style="opacity: 1; filter: blur(0px);"><header>
+        <p>&ZeroWidthSpace;</p>
+    </header>
+        
+        <header>
+        <p>&ZeroWidthSpace;</p>
+    </header><header>
+  <img src="https://heroin.gg/turbant.png">
+  <h1>@turbant</h1>
+  <h2>&ZeroWidthSpace;</h2><div class="badges">
+    
+    
+    
+  <div class="badge">
+      <img src="https://cdn.discordapp.com/attachments/1095877679057731584/1109854452313247744/image.png" alt="goat">
+      <span class="badge-text">Goat</span>
+    </div></div>
+</header>
+        <ul>
+            <li>
+                <a href="https://flipd.gg/turbant">
+                    <img src="flipd.png" alt="em" width="20">
+                    Flipd
+                </a>
+            </li>
+            <li></li>
+            <li></li>
+            <li>
+                <a href="https://seamen.t.me">
+                    <img src="t.png" alt="Tele" width="20">
+                    Telegram
+                </a>
+            </li>
+            <li>
+                <a href="https://discord.com/users/527872840104673300">
+                    <img src="discord.png" alt="Cord" width="20">
+                    Discord
+                </a>
+            </li>
+        </ul>
+    </main>
+
+
+
+
+
+</body></html>
